@@ -68,7 +68,17 @@ public class LL {
         }
 
     }
+    public void delete(int val){
+        Node temp = head ;
+        while (temp != null && temp.next.value != val){
+            temp = temp.next ;
+        }
+        if (temp.next.value == val){
+            temp.next= temp.next.next ;
+        }
+        this.size-- ;
 
+    }
     private class Node{
         int value ;
         Node next ;

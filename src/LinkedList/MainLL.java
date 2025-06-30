@@ -1,6 +1,6 @@
 package LinkedList;
 
-public class Main {
+public class MainLL {
     public static void main (String[] args){
         LL ll = new LL() ;
         ll.insertFirst(5);
@@ -11,6 +11,10 @@ public class Main {
         ll.append(2, 48) ;
         ll.append(3, 49) ;
         ll.append(5, 50) ;
+//        ll.traverse();
+
+        ll.delete(49) ;
+        ll.delete(50) ;
         ll.traverse();
     }
 }
